@@ -1,0 +1,31 @@
+{
+  "name": "certkeeper",
+  "version": "1.0.0",
+  "description": "Gets and renews Let's Encrypt certificates (Cloudflare DNS challenge) into a folder, for any app that reads PEM files.",
+  "main": "src/manager.js",
+  "bin": {
+    "certkeeper": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js run",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "acme-client": "^5.4.0"
+  },
+  "devDependencies": {
+    "selfsigned": "^5.5.0"
+  },
+  "keywords": [
+    "letsencrypt",
+    "acme",
+    "certificate",
+    "cloudflare",
+    "renew",
+    "tls"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  }
+}
